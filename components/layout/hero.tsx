@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,16 +33,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2">
-            <Image
-              src="/hero.png"
-              width={500}
-              height={500}
-              alt="Hero Image"
-              className="img-fluid"
-              style={{ display: "block", visibility: "visible", opacity: 1 }}
-              data-aos="fade-up" 
-              data-aos-delay="200" 
-            />
+          <Image src="/hero.png" alt="Hero Image" width={500} height={300} priority />
+
           </div>
         </div>
       </div>

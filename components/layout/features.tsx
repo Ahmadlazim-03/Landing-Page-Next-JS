@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 const Features = () => {
   return (
@@ -15,7 +15,9 @@ const Features = () => {
         <div className="row gy-5 justify-content-between">
 
           <div className="col-xl-5" data-aos="zoom-out" data-aos-delay="100">
-            <Image src="/features.svg" className="img-fluid" alt="" fill />
+
+<Image src="/features.svg" alt="Features Image" width={500} height={300} />
+
           </div>
 
           <div className="col-xl-6 d-flex">

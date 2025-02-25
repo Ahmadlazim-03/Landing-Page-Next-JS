@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from "react";
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -36,32 +36,15 @@ const About = () => {
           <div className="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div className="row gy-4">
               <div className="col-lg-6">
-                <Image src="/about-company-1.jpg" className="img-fluid"  width={500}
-                  height={500}
-                  alt="Hero Image"
-                  style={{ display: "block", visibility: "visible", opacity: 1 }}
-                  data-aos="fade-up" 
-                  data-aos-delay="200"  />
+              <Image src="/about-company-1.jpg" alt="Company 1" width={300} height={200} />
               </div>
               <div className="col-lg-6">
               <div className="row gy-4">
               <div className="col-lg-12">
-                <Image src="/about-company-2.jpg" width={500}
-                  height={500}
-                  alt="Hero Image"
-                  className="img-fluid"
-                  style={{ display: "block", visibility: "visible", opacity: 1 }}
-                  data-aos="fade-up" 
-                  data-aos-delay="200"  />
+              <Image src="/about-company-2.jpg" alt="Company 2" width={300} height={200} />
               </div>
               <div className="col-lg-12">
-                <Image src="/about-company-3.jpg"  width={500}
-                  height={500}
-                  alt="Hero Image"
-                  className="img-fluid"
-                  style={{ display: "block", visibility: "visible", opacity: 1 }}
-                  data-aos="fade-up" 
-                  data-aos-delay="200"  />
+              <Image src="/about-company-3.jpg" alt="Company 3" width={300} height={200} />
               </div>
               </div>
               </div>

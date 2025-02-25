@@ -39,7 +39,7 @@ export default function RootLayout({
         <Script src="/assets/vendor/php-email-form/validate.js" strategy="lazyOnload" />
         <Script src="/assets/vendor/aos/aos.js" strategy="lazyOnload" />
         <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/main.js" strategy="lazyOnload" />
+
       </body>
     </html>
   );
