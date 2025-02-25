@@ -24,7 +24,11 @@ export const metadata: Metadata = {
   title: "Landing Page",
   description: "",
   keywords: "",
-  viewport: "width=device-width, initial-scale=1.0",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -48,11 +52,11 @@ export default function RootLayout({
       </Head>
       <body className={`index-page ${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
-        <Script src="./assets/vendor/php-email-form/validate.js" strategy="lazyOnload" />
-        <Script src="./assets/vendor/aos/aos.js" strategy="lazyOnload" />
-        <Script src="./assets/vendor/glightbox/js/glightbox.min.js" strategy="lazyOnload" />
-        <Script src="./assets/js/main.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/vendor/php-email-form/validate.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/aos/aos.js" strategy="lazyOnload" />
+        <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="lazyOnload" />
+        <Script src="/assets/js/main.js" strategy="lazyOnload" />
       </body>
     </html>
   );
